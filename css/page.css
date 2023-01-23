@@ -1,0 +1,1571 @@
+body {
+    background-color: rgb(50, 50, 50);
+}
+
+header {
+    margin: -8px;
+    /* box-shadow: rgb(0 0 0 / 35%) 0 2px 10px; */
+    margin-bottom: 0;
+    position: relative;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(50, 50, 50);
+    height: 75px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: -20px;
+    top: 15px;
+}
+
+.Name-E {
+    padding: 3px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    bottom: -3px;
+    right: 22px;
+}
+
+.Name-E a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style-type: none;
+    margin-left: -100px;
+    position: relative;
+    top: 4px;
+}
+
+.links li {
+    padding: 5px;
+    margin-left: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    z-index: 100;
+}
+
+.links li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.links li:hover a {
+    color: rgb(58, 223, 220);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.Indiv-links {
+    display: none;
+    padding: 5px;
+    margin-top: 15px;
+    position: absolute;
+    left: calc(43% / 2);
+    top: 100%;
+    background-color: rgb(253, 253, 253);
+    margin-top: 30px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+
+.Indiv-links li {
+    height: 20px;
+    width: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    border-bottom: 1px rgb(0, 0, 0) solid;
+    margin: 0;
+    list-style-type: none;
+    text-align: right;
+    font-weight: bold;
+    position: relative;
+}
+
+.Indiv-links li a {
+    text-decoration: none;
+    color: rgb(0, 255, 255);
+}
+
+.Indiv-links li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.list {
+
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: white 5px solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    position: relative;
+    left: 6px;
+    top: 8px;
+}
+
+.A-ctiv:hover .list {
+    display: block;
+    border: rgb(0, 255, 255) 5px solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.A-ctiv:hover .Indiv-links {
+    display: block;
+    transition-duration: 5s;
+}
+
+.top-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Search {
+    width: 55%;
+    height: 30px;
+    padding: 6px;
+    position: relative;
+    top: 3px;
+    left: -35px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: none;
+
+}
+
+#Search::placeholder {
+    padding: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+
+}
+
+#Search:hover {
+    width: 70%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+#Search:focus {
+    height: 34px;
+    width: 70%;
+    outline: none;
+    border: rgb(0, 255, 255) 2px solid;
+
+    transform: .5s;
+    -webkit-transform: .5s;
+    -moz-transform: .5s;
+    -ms-transform: .5s;
+    -o-transform: .5s;
+
+}
+
+.Red-point {
+    width: 13px;
+    height: 13px;
+    background-color: red;
+    position: absolute;
+    top: -4px;
+    right: -5px;
+    z-index: 100;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.Name-C {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    right: 20px;
+    top: 3px;
+    cursor: pointer;
+}
+
+.Ph-P {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    position: relative;
+    bottom: -2px;
+    cursor: pointer;
+}
+
+.gg-home-alt {
+    color: rgb(0, 255, 255);
+    position: relative;
+    right: 10px;
+    top: 3px;
+}
+
+.content {
+    height: 100px;
+    display: grid;
+    grid-template-columns: 280px 2fr 1fr;
+    grid-template-rows: 2974px;
+    margin-left: -8px;
+}
+
+.content aside {
+    border-right-color: rgb(160, 160, 160);
+    border-right-width: calc(1px / 2);
+    border-right-style: solid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.content aside ul {
+    position: fixed;
+
+} 
+
+.content aside ul li {
+    list-style-type: none;
+    margin: 10px;
+    padding: 13px;
+    padding-bottom: 35px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: transparent;
+    color: rgb(85, 243, 245);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    width: 150px;
+    height: 10px;
+    position: relative;
+    left: -3px;
+}
+
+.content aside ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    padding: -8px;
+}
+
+.content aside ul li:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.content section {
+    border-right-color: rgb(160, 160, 160);
+    border-right-width: calc(1px / 2);
+    border-right-style: solid;
+}
+
+.tweet-head {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    position: relative;
+    border-top-color: rgb(160, 160, 160);
+    border-top-width: calc(1px / 2);
+    border-top-style: solid;
+    padding-top: 17px;
+    padding-left: 35px;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: aliceblue;
+    position: relative;
+    left: 30px;
+    
+}
+
+.Elon-img {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    cursor: pointer;
+}
+
+h4 {
+    font-size: 16px ;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color:aliceblue;
+    position: relative;
+    left: 15px;
+    bottom: 16px;
+    cursor: pointer;
+}
+
+#add {
+    position: relative;
+    bottom: 9px;
+    color: rgb(160, 160, 160);
+    left: 24px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: -7px;
+}
+
+.tweet-body p {
+    color: aliceblue;
+    width: 550px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    left: 106px;
+    bottom: 48px;
+    letter-spacing: 80%;
+
+}
+.tweet-body p  a {
+    color:rgb(43, 141, 221);
+    text-decoration: none;
+}
+
+.tweet-body p a:hover{
+    text-decoration: underline;
+
+}
+
+.tweet-body img {
+    width: 79%;
+    height: 9%;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    position: relative;
+    left: 106px;
+    bottom: 48px;
+}
+
+.tweet-bar {
+    border-bottom-color: rgb(160, 160, 160) ;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    position: relative;
+    padding-left: 87px;
+    bottom: 50px;
+    
+}
+
+.tweet-bar ul {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    width: 520px;
+    border-radius: 50px ;
+    -webkit-border-radius: 50px ;
+    -moz-border-radius: 50px ;
+    -ms-border-radius: 50px ;
+    -o-border-radius: 50px ;
+    position: relative;
+    left: 20px;
+}
+
+.tweet-bar ul:hover {
+    background-color: rgb(129, 129, 129);
+}
+
+.tweet-bar ul li {
+    padding: 2px;
+    list-style-type: none;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 13px;
+    position: relative;
+    right: 14px;
+    color: aliceblue;
+    letter-spacing: 1.0;
+}
+
+.tweet-bar ul li i {
+    position:relative;
+    right: 9px;
+    color:rgb(85, 243, 245);
+}
+
+
+.tweet-bar ul #N-love #love:hover {
+    cursor: pointer;
+    color: rgba(237, 38, 3, 0.985);
+
+}
+
+.tweet-bar ul #N-love:hover {
+    cursor: pointer;
+    color: rgba(233, 80, 53, 0.985);
+}
+
+.tweet-bar ul #N-comment #comment:hover {
+    cursor: pointer;
+    color: rgba(3, 132, 237, 0.985);
+
+}
+
+.tweet-bar ul #N-comment:hover {
+    cursor: pointer;
+    color: rgba(44, 160, 255, 0.985);
+}
+
+.tweet-bar ul #N-share #share:hover {
+    cursor: pointer;
+    color: rgba(0, 255, 85, 0.985);
+
+}
+
+.tweet-bar ul #N-share:hover {
+    cursor: pointer;
+    color: rgba(43, 255, 149, 0.985);
+}
+
+.tweet-bar ul #N-views #views:hover {
+    cursor: pointer;
+    color: rgba(0, 255, 85, 0.985);
+
+}
+
+.tweet-bar ul #N-views:hover {
+    cursor: pointer;
+    color: rgba(43, 255, 149, 0.985);
+}
+
+.tweet-bar ul #N-gift #gift:hover {
+    cursor: pointer;
+    color: rgba(98, 0, 255, 0.985);
+
+}
+
+.tweet-bar ul #N-gift:hover {
+    cursor: pointer;
+    color: rgb(118, 56, 218);
+}
+
+.line {
+    border-top-color: rgb(160, 160, 160) ;
+    border-top-width: 1px;
+    border-top-style: solid;
+    width: 100%;
+}
+
+.tweet-head2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    position: relative;
+    padding-top: 17px;
+    padding-left: 35px;
+    margin-top: -56px;
+}
+
+h4 {
+    font-size: 16px ;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color:aliceblue;
+    position: relative;
+    left: 15px;
+    bottom: 16px;
+    cursor: pointer;
+}
+
+#add2 {
+    position: relative;
+    bottom: 9px;
+    color: rgb(160, 160, 160);
+    left: 24px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: -7px;
+}
+
+.tweet-body2 p {
+    color: aliceblue;
+    width: 550px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    left: 106px;
+    bottom: 48px;
+    letter-spacing: 80%;
+
+}
+.tweet-body2 p  a {
+    color:rgb(43, 141, 221);
+    text-decoration: none;
+}
+
+.tweet-body2 p a:hover{
+    text-decoration: underline;
+}
+
+.tweet-bar2 {
+    border-bottom-color: rgb(160, 160, 160) ;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    position: relative;
+    padding-left: 88px;
+    bottom: 55px;
+}
+
+.tweet-bar2 ul {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    width: 520px;
+    border-radius: 50px ;
+    -webkit-border-radius: 50px ;
+    -moz-border-radius: 50px ;
+    -ms-border-radius: 50px ;
+    -o-border-radius: 50px ;
+    position: relative;
+    left: 20px;
+}
+
+.tweet-bar2 ul:hover {
+    background-color: rgb(129, 129, 129);
+}
+
+.tweet-bar2 ul li {
+    padding: 2px;
+    list-style-type: none;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 13px;
+    position: relative;
+    right: 14px;
+    color: aliceblue;
+    letter-spacing: 1.0;
+    margin-left: 17px;
+}
+
+.tweet-bar2 ul li i {
+    position:relative;
+    right: 9px;
+    color:rgb(85, 243, 245);
+}
+
+
+.tweet-bar2 ul #N-love #love:hover {
+    cursor: pointer;
+    color: rgba(237, 38, 3, 0.985);
+
+}
+
+.tweet-bar2 ul #N-love:hover {
+    cursor: pointer;
+    color: rgba(233, 80, 53, 0.985);
+}
+
+.tweet-bar2 ul #N-comment #comment:hover {
+    cursor: pointer;
+    color: rgba(3, 132, 237, 0.985);
+
+}
+
+.tweet-bar2 ul #N-comment:hover {
+    cursor: pointer;
+    color: rgba(44, 160, 255, 0.985);
+}
+
+.tweet-bar2 ul #N-share #share:hover {
+    cursor: pointer;
+    color: rgba(0, 255, 85, 0.985);
+
+}
+
+.tweet-bar2 ul #N-share:hover {
+    cursor: pointer;
+    color: rgba(43, 255, 149, 0.985);
+}
+
+.tweet-bar2 ul #N-views #views:hover {
+    cursor: pointer;
+    color: rgba(0, 255, 85, 0.985);
+
+}
+
+.tweet-bar2 ul #N-views:hover {
+    cursor: pointer;
+    color: rgba(43, 255, 149, 0.985);
+}
+
+.tweet-bar2 ul #N-gift #gift:hover {
+    cursor: pointer;
+    color: rgba(98, 0, 255, 0.985);
+
+}
+
+.tweet-bar2 ul #N-gift:hover {
+    cursor: pointer;
+    color: rgb(118, 56, 218);
+} 
+
+.line2 {
+    border-top-color: rgb(160, 160, 160) ;
+    border-top-width: 1px;
+    border-top-style: solid;
+    width: 100%;
+}
+
+.tweet-head3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    position: relative;
+    /* left: 35px; */
+    border-top-color: rgb(160, 160, 160);
+    border-top-width: calc(1px / 2);
+    border-top-style: solid;
+    padding-top: 17px;
+    padding-left: 35px;
+    margin-top: -56px;
+}
+
+.Microsoft-img {
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+h4 {
+    font-size: 16px ;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color:aliceblue;
+    position: relative;
+    left: 15px;
+    bottom: 16px;
+    cursor: pointer;
+    top: -12px;
+}
+
+#add3 {
+    position: relative;
+    bottom: 9px;
+    color: rgb(160, 160, 160);
+    left: 24px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tweet-body3 p {
+    color: aliceblue;
+    width: 550px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    left: 106px;
+    bottom: 48px;
+    letter-spacing: 80%;
+
+}
+
+.tweet-body3 p  a {
+    color:rgb(43, 141, 221);
+    text-decoration: none;
+}
+
+.tweet-body3 p a:hover{
+    text-decoration: underline;
+}
+
+.tweet-body3 img {
+    width: 79%;
+    height: 9%;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    position: relative;
+    left: 106px;
+    bottom: 48px;
+}
+
+.tweet-bar3 {
+    border-bottom-color: rgb(160, 160, 160) ;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    position: relative;
+    padding-left: 88px;
+    bottom: 55px;
+}
+
+.tweet-bar3 ul {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    width: 520px;
+    border-radius: 50px ;
+    -webkit-border-radius: 50px ;
+    -moz-border-radius: 50px ;
+    -ms-border-radius: 50px ;
+    -o-border-radius: 50px ;
+    position: relative;
+    left: 20px;
+}
+
+.tweet-bar3 ul:hover {
+    background-color: rgb(129, 129, 129);
+}
+
+.tweet-bar3 ul li {
+    padding: 2px;
+    list-style-type: none;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 13px;
+    position: relative;
+    right: 14px;
+    color: aliceblue;
+    letter-spacing: 1.0;
+}
+
+.tweet-bar3 ul li i {
+    position:relative;
+    right: 9px;
+    color:rgb(85, 243, 245);
+}
+
+
+.tweet-bar3 ul #N-love #love:hover {
+    cursor: pointer;
+    color: rgba(237, 38, 3, 0.985);
+
+}
+
+.tweet-bar3 ul #N-love:hover {
+    cursor: pointer;
+    color: rgba(233, 80, 53, 0.985);
+}
+
+.tweet-bar3 ul #N-comment #comment:hover {
+    cursor: pointer;
+    color: rgba(3, 132, 237, 0.985);
+
+}
+
+.tweet-bar3 ul #N-comment:hover {
+    cursor: pointer;
+    color: rgba(44, 160, 255, 0.985);
+}
+
+.tweet-bar3 ul #N-share #share:hover {
+    cursor: pointer;
+    color: rgba(0, 255, 85, 0.985);
+
+}
+
+.tweet-bar3 ul #N-share:hover {
+    cursor: pointer;
+    color: rgba(43, 255, 149, 0.985);
+}
+
+.tweet-bar3 ul #N-views #views:hover {
+    cursor: pointer;
+    color: rgba(0, 255, 85, 0.985);
+
+}
+
+.tweet-bar3 ul #N-views:hover {
+    cursor: pointer;
+    color: rgba(43, 255, 149, 0.985);
+}
+
+.tweet-bar3 ul #N-gift #gift:hover {
+    cursor: pointer;
+    color: rgba(98, 0, 255, 0.985);
+
+}
+
+.tweet-bar3 ul #N-gift:hover {
+    cursor: pointer;
+    color: rgb(118, 56, 218);
+} 
+
+
+.line3 {
+    border-top-color: rgb(160, 160, 160) ;
+    border-top-width: 1px;
+    border-top-style: solid;
+    width: 100%;
+}
+
+.Microsoft-img {
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+h4:hover {
+    text-decoration: underline;
+}
+
+.New-acount {
+    width: 290px;
+    padding: 15px;
+    border: rgb(160, 160, 160) 1px solid;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    position: relative;
+    left: 15px;
+    position: sticky;
+    margin: 20px;
+    top: 15px;
+    height: 300px;
+    
+}
+
+.New-acount h2 {
+        font-size: 22px ;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(255, 255, 255);
+    position: relative;
+    left: 9px;
+    bottom: 16px; 
+    cursor: pointer;
+}
+
+.New-acount h5 {
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: .4;
+}
+.New-acount ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    right: 20px;
+    top: -30px;
+}
+
+.New-acount ul li {
+    list-style-type: none;
+    font-size: 15px;
+    background-color: aliceblue;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    height: 25px;
+    margin-bottom: 13px;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.New-acount ul li:hover {
+    background-color: rgb(85, 243, 245);
+}
+
+.New-acount p {
+    font-size: 11px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(160, 160, 160);
+    position: relative;
+    bottom: 40px;
+    left: 10px;
+    letter-spacing: 1.0;
+    line-height: 15px;
+}
+
+.New-acount p  a {
+    color:rgb(43, 141, 221);
+    text-decoration: none;
+}
+
+.New-acount p a:hover{
+    text-decoration: underline;
+}
+
+#Elon1 {
+    color:rgb(85, 243, 245);
+    font-size: 24px;
+    position: relative;
+    top: 6px;
+    cursor: pointer;
+    left: 326px;
+
+}
+
+#Elon2 {
+    color:rgb(85, 243, 245);
+    font-size: 24px;
+    position: relative;
+    left: 338px;
+    top: 6px;
+    cursor: pointer;
+}
+
+#Microsoft {
+    color:rgb(85, 243, 245);
+    font-size: 24px;
+    position: relative;
+    left: 298px;
+    top: 6px;
+    cursor: pointer;
+}
+
+#Bill {
+    color:rgb(85, 243, 245);
+    font-size: 24px;
+    position: relative;
+    left: 356px;
+    top: 6px;
+    cursor: pointer;
+}
+
+#Mahrez {
+    color:rgb(85, 243, 245);
+    font-size: 24px;
+    position: relative;
+    left: 247px;
+    top: 6px;
+    cursor: pointer;
+}
+
+#Messi {
+    color:rgb(85, 243, 245);
+    font-size: 24px;
+    position: relative;
+    left: 350px;
+    top: 6px;
+    cursor: pointer;
+}
+#Football {
+    color:rgb(85, 243, 245);
+    font-size: 24px;
+    position: relative;
+    left: 212px;
+    top: 6px;
+    cursor: pointer;
+}
+#pep {
+    color:rgb(85, 243, 245);
+    font-size: 24px;
+    position: relative;
+    left: 347px;
+    top: 6px;
+    cursor: pointer;
+}
+
+#adidas {
+    color:rgb(85, 243, 245);
+    font-size: 24px;
+    position: relative;
+    left: 394px;
+    top: 6px;
+    cursor: pointer;
+}
+
+#Halland {
+    color:rgb(85, 243, 245);
+    font-size: 24px;
+    position: relative;
+    left: 222px;
+    top: 6px;
+    cursor: pointer;
+}
+
+
+
+@media only  screen and (max-width:768px) {
+
+    nav {
+        width: 600px;
+    }
+    .content {
+        grid-template-columns: 80px 2fr;
+    }
+
+    .content aside {
+        height: 4207px;
+    }
+
+    .content section {
+        height: 4207px;
+    }
+    
+    .content aside ul li  a {
+        margin-left: -80px;
+        color: transparent;
+        background-color: transparent;
+    }
+
+    .content aside ul li:hover {
+        background-color: transparent;
+    }
+    .content aside ul li {
+        left: -7px;
+    }
+
+    #Hashtag {
+        left: 0;
+    }
+
+    #Star {
+        left: -4px;
+    }
+
+    #bundle {
+        left: -14px;
+    }
+
+    #fire {
+        left: 4px;
+    }
+
+    .content aside ul {
+        position: sticky;
+        top: 20px;
+        margin-left: -10px;
+    }
+
+
+    .tweet-head {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .tweet-head2 {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .tweet-head3 {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .tweet-body p {
+        position: relative;
+        margin-top: 25px;
+        right: 30px;
+        margin-left: -15px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    .tweet-body2 p {
+        position: relative;
+        margin-top: 25px;
+        right: 40px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 500px;
+    }
+
+    .tweet-body3 p {
+        position: relative;
+        margin-top: 25px;
+        right: 30px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 500px;
+
+    }
+
+    .tweet-bar ul:hover {
+        background-color: transparent;
+    }
+
+    .tweet-bar2 ul:hover {
+        background-color: transparent;
+    }
+
+    .tweet-bar3 ul:hover {
+        background-color: transparent;
+    }
+
+    .Name-E {
+        font-weight: 700;
+
+    }
+
+    #add {
+        font-size: 20px;
+        top: -14px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    #add2 {
+        font-size: 20px;
+        top: -14px;
+        font-weight: 700;
+    }
+
+    #add3 {
+        font-size: 20px;
+        top: -14px;
+        font-weight: 700;
+    }
+
+    .New-acount {
+        display: none;
+    }
+
+    #Elon1 {
+        left: 171px;
+    
+    }
+    
+    #Elon2 {
+        left: 223px;
+    }
+    
+    #Microsoft {
+        left: 123px;
+    }
+    
+    #Bill {
+        left: 208px;
+    }
+    
+    #Mahrez {
+        left: 66px;
+    }
+    
+    #Messi {
+        left: 240px;
+    }
+    #Football {
+        left: 35px;
+    }
+    #pep {
+        left: 243px;
+    }
+    
+    #adidas {
+        left: 305px;
+    }
+    
+    #Halland {
+        left: 55px;
+    }
+    h4 {
+        font-size: 20px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        top: -20px;
+    }
+    .links {
+        margin-left: 10px;
+    }
+
+    .links li {
+         margin-left: -33px; 
+    }
+
+    .A-ctiv {
+        margin-left: -5px;
+    }
+
+    .links li a {
+        color: transparent;
+        background-color: transparent;
+        position: relative;
+        left: -20px;
+    }
+
+    .links li a:hover {
+        color: transparent;
+        background-color: transparent;
+    }
+
+    .list {
+        left: -36px;
+    }
+
+    .Indiv-links {
+        margin-left: -20px;
+    }
+    .Indiv-links li {
+        left: 19px;
+    }
+    .Indiv-links li a{
+        left: 5px;
+    }
+    #Search {
+        display: none;
+    }
+
+    .top-right ul li {
+        left: 20px;
+    }
+    .header {
+        margin-right: -500%;
+    }
+    .nav-bar {
+        position: relative;
+        left: 0px;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:1200px) {
+
+    h4 {
+        font-size: 20px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        top: -20px;
+    }
+
+    #Elon1 {
+        left: 170px;
+    
+    }
+    
+    #Elon2 {
+        left: 220px;
+    }
+    
+    #Microsoft {
+        left: 133px;
+    }
+    
+    #Bill {
+        left: 206px;
+    }
+    
+    #Mahrez {
+        left: 69px;
+    }
+    
+    #Messi {
+        left: 237px;
+    }
+    #Football {
+        left: 49px;
+    }
+    #pep {
+        left: 241px;
+    }
+    
+    #adidas {
+        left: 301px;
+    }
+    
+    #Halland {
+        left: 68px;
+    }
+
+    #add {
+        font-size: 18px;
+        top: -14px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    #add2 {
+        font-size: 18px;
+        top: -14px;
+        font-weight: 700;
+    }
+
+    #add3 {
+        font-size: 18px;
+        top: -14px;
+        font-weight: 700;
+    }
+
+    .tweet-body p {
+        position: relative;
+        margin-top: 25px;
+        right: 30px;
+        margin-left: -15px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    .tweet-body2 p {
+        position: relative;
+        margin-top: 25px;
+        right: 40px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 500px;
+    }
+
+    .tweet-body3 p {
+        position: relative;
+        margin-top: 25px;
+        right: 30px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 500px;
+    }
+
+    #Search {
+        left: -35px;
+    }
+
+    .links {
+        left: 15px;
+    }
+    .links li {
+        margin-left: 15px;
+        
+    }
+
+    .Indiv-links {
+        left: 120px;
+    }
+
+    .content aside {
+        height: 4161px;
+    }
+
+    .content section {
+        height: 4161px;
+    }
+    
+}
+
+@media (min-width:1201px) and (max-width:1353px){
+
+    h4 {
+        font-size: 19px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        top: -20px;
+    }
+
+    #Elon1 {
+        left: 170px;
+    }
+    
+    #Elon2 {
+        left: 223px;
+        
+    }
+    
+    #Microsoft {
+        left: 136px;
+    }
+    
+    #Bill {
+        left: 210px;
+    }
+    
+    #Mahrez {
+        left: 71px;
+    }
+    
+    #Messi {
+        left: 239px;
+    }
+    #Football {
+        left: 53px;
+    }
+    #pep {
+        left: 240px;
+    }
+    
+    #adidas {
+        left: 301px;
+    }
+    
+    #Halland {
+        left: 74px;
+    }
+    
+    .tweet-body p {
+        position: relative;
+        margin-top: 25px;
+        right: 20px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    .tweet-body2 p {
+        position: relative;
+        margin-top: 25px;
+        right: 20px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 500px;
+    }
+
+    .tweet-body3 p {
+        position: relative;
+        margin-top: 25px;
+        right: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 500px;
+    }
+    #add {
+        font-size: 18px;
+        top: -14px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    #add2 {
+        font-size: 18px;
+        top: -14px;
+        font-weight: 700;
+    }
+
+    #add3 {
+        font-size: 18px;
+        top: -14px;
+        font-weight: 700;
+    }
+
+    .content aside {
+        height: 4161px;
+    }
+
+    .content section {
+        height: 4161px;
+    }
+
+    .Tweet-bar ul {
+        left: 0;
+    }
+    .tweet-bar2 ul {
+    left: 0;
+    }
+
+    .Tweet-bar3 ul {
+    left: 0;
+    }
+}
