@@ -618,7 +618,7 @@ h4 {
     font-size: 17px;
     font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 16px;
+    margin: 13px;
     position: relative;
     right: 14px;
     color: aliceblue;
@@ -811,7 +811,7 @@ h4 {
     font-size: 17px;
     font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 16px;
+    margin: 13px;
     position: relative;
     right: 14px;
     color: aliceblue;
@@ -1447,6 +1447,18 @@ h4:hover {
 
     .content section {
         height: 4161px;
+    }
+    
+    .tweet-bar ul li {
+    margin: 10px;
+    }
+    
+    .tweet-bar2 ul li {
+    margin: 10px;
+    }
+    
+    .tweet-bar3 ul li {
+    margin: 10px;
     }
     
 }
