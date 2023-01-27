@@ -1,2 +1,2 @@
-# Similar_Twitter_Design
+# Similar_Twitter
 Completion time : 9 Days
